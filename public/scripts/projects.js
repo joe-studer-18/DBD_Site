@@ -22,7 +22,7 @@ function loadProjects() {
   var template, text, a, i;
   // Get the template element:
   dst = document.getElementById("projectBar");
-  img_width = (screen.width / 4) - 40;
+  img_width = (screen.width < 500 ? 400 : (screen.width / 4) - 40);
 
   for (i = 0; i < myProjects.length; i++) {
     // Create a new node, based on the template:
@@ -32,14 +32,12 @@ function loadProjects() {
     figure = document.createElement('figure');
 
     img = document.createElement('img');
-    caption = document.createElement('figcaption');
-
-    // Add data from the array:
     img.src = myProjects[i].img;
     img.style.width = img_width + 'px';
-    img.classList.add('project-image');
+    img.classList.add('project-img');
     figure.appendChild(img);
 
+    caption = document.createElement('figcaption');
     caption.textContent = myProjects[i].id;
 
     figure.appendChild(caption);

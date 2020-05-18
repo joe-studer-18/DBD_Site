@@ -1,0 +1,11 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item {
+  height: 100px;
+  width: 100%;
+  clear: both;
+  border-style: solid none solid none;
+}
