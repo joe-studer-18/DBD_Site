@@ -6,7 +6,8 @@
 }
 
 .project-img {
-  max-height: 300px;
+  max-width: 300px;
+  max-height: auto;
 }
 
 .project-row {
