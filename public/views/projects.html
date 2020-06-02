@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <title>Dark Brew Dev, LLC</title>
+  <base href = "../" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Joseph Studer, Joe Studer, Joe Studer Software Engineer,
@@ -28,12 +29,12 @@
                                       title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small">
+        <a href="../index.html#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="../index.html#about" class="w3-bar-item w3-button w3-hide-small">
           <i class="fa fa-user"></i> ABOUT</a>
-        <a href="views/projects.html" class="w3-bar-item w3-button w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">
           <i class="fa fa-th"></i> PROJECTS</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+        <a href="../index.html#contact" class="w3-bar-item w3-button w3-hide-small">
           <i class="fa fa-envelope"></i> CONTACT</a>
         <a href="views/resume.pdf" class="w3-bar-item w3-button w3-hide-small">
           <i class="fa fa-file"></i> RESUME</a>
@@ -47,7 +48,7 @@
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
         <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="views/projects.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
         <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
         <a href="views/resume.pdf" class="w3-bar-item w3-button"> RESUME</a>
         <a href="views/blog.html" class="w3-bar-item w3-button"> BLOG</a>
@@ -55,55 +56,25 @@
       </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-          DARK BREW DEV, LLC</span>
-        <h3 class="w3-center w3-padding-large w3-black w3-animate-opacity">
-          Software Development Consulting</h3>
-      </div>
-    </div>
-
-    <!-- Container (About Section) -->
-    <section id="about">
-      <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT</h3>
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <img src="/images/me.webp" 
-               class="default-img"
-               width="500" height="333">
-          <p><b><i class="fa fa-user w3-margin-right"></i>Joe Studer</b></p><br>
-        </div>
-        <p>
-          DarkBrewDev, LLC is a freelance software development consulting firm run
-          by a former Google intern (&amp; future Google Software Engineer in Fall 2020).
-          If you're looking for assistance with:
-          <ul>
-            <li>Website Development</li>
-            <li>Search Engine Optimization</li>
-            <li>App Development</li>
-            <li>....and more</li>
-          </ul>
-          Then check out our <a href=#contact>contact info</a> below to get a quote!
-        </p>
-        <div class="w3-row">
-          <!-- Hide this text on small devices -->
-          <div class="w3-col m6 w3-hide-small w3-padding-large">
-          </div>
-        </div>
-      </div>
-      <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-      </div>
-    </section>
-
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container">
       <div class="w3-display-middle">
         <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-          CONTACT
+          PROJECTS 
         </span>
       </div>
+    </div>
+
+    <!-- Container (My Work Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="projects">
+      <div class="project-row" id="projectBar">
+        <!-- Projects are added dynamically in Javascript -->
+        <script src = "scripts/projects.js"></script>
+      </div>
+      <p class="w3-center"><em>To see more, visit <a 
+         href='https://www.github.com/joe-studer-18'>my GitHub</a>.<br>
+      </em></p><br>
+    </div>
     </div>
 
     <!-- Container (Contact Section) -->

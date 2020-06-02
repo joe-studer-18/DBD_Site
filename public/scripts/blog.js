@@ -5,14 +5,14 @@ xhttp.onreadystatechange = function() {
   }
 };
 
-xhttp.open("GET", "blogs/blogs_metadata.xml", true);
+xhttp.open("GET", "views/blogs/blogs_metadata.xml", true);
 xhttp.send();
 
 function loadBlogs(xml) {
   var xmlDoc = xml.responseXML;
   var dst = document.getElementById("blogIndex");
   fullBlog = document.createElement("a");
-  fullBlog.href = "blogs/" + 
+  fullBlog.href = "views/blogs/" + 
     xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue +
     ".html";
 
