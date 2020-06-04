@@ -5,6 +5,9 @@
   min-height: 600px;
 }
 
+.project-card:hover {
+  transform: scale(1.05);
+}
 .project-img {
   max-width: 300px;
   max-height: auto;
@@ -23,3 +26,5 @@
   padding: 10px;
   max-width: 40ch;
 }
+
+

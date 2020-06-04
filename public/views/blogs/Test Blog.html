@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <title>DarkBrewDev</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Joseph Studer, Joe Studer, Joe Studer Software Engineer,
+<title>DarkBrewDev</title>
+<base href="../../" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Joseph Studer, Joe Studer, Joe Studer Software Engineer,
                                    Software Engineer, Missouri S&T, Kappa Alpha Order">
-  <link rel="stylesheet" 
-        href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" 
-        href="../../style/index.css">
-  <link rel="stylesheet" 
-        href="../../style/blogs.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../style/index.css">
+<link rel="stylesheet" href="../../style/blogs.css">
 
-  <head>
+<head>
     <link rel="shortcut icon" type="image/x-icon" href="../images/DarkBrewDev.svg" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-      <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-right" 
-           href="javascript:void(0);" onclick="toggleFunction()" 
-                                      title="Toggle Navigation Menu">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="../../index.html#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="../../index.html#about" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-user"></i> ABOUT</a>
-        <a href="../../index.html#projects" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-th"></i> PROJECTS</a>
-        <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="../resume.pdf" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-file"></i> RESUME</a>
-        <a href="../blog.html" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-th-large"></i> BLOG</a>
-        <a href="../../index.html#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-          <i class="fa fa-search"></i>
-        </a>
-      </div>
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a href="views/projects.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> PROJECTS</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="views/resume.pdf" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-file"></i> RESUME</a>
+            <a href="views/blog.html" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th-large"></i> BLOG</a>
+        </div>
 
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="../../index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="../../index.html#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-        <a href="../../index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        <a href="../../views/resume.pdf" class="w3-bar-item w3-button"> RESUME</a>
-        <a href="../../views/blog.html" class="w3-bar-item w3-button"> BLOG</a>
-        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-      </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="index.html#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="views/resume.pdf" class="w3-bar-item w3-button"> RESUME</a>
+            <a href="views/blog.html" class="w3-bar-item w3-button"> BLOG</a>
+        </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-3 w3-display-container" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-          TEST BLOG
-        </span>
-      </div>
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                TEST BLOG
+            </span>
+        </div>
     </div>
 
-    <div class = "w3-content w3-container w3-padding-64" id="blogIndex">
-      This is a test blog article.
+    <div class="w3-content w3-container w3-padding-64" id="blogIndex">
+        This is a test blog article.
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity">
-      <div class="w3-xlarge w3-section">
-      </div>
+        <div class="w3-xlarge w3-section">
+        </div>
     </footer>
-    <script src = "../../scripts/index.js"></script>
-  </body>
-</html>
+    <script src="scripts/index.js"></script>
+</body>
 
+</html>
