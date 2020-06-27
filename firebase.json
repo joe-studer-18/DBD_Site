@@ -6,6 +6,18 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/books",
+        "destination": "https://docs.google.com/spreadsheets/d/17wfEY5sipBd-17NSV132quiA91fjCwOi4uE8qpF9oKU",
+        "type": 301
+      },
+      {
+        "source": "/resume",
+        "destination": "/views/resume.pdf",
+        "type": 301
+      }
     ]
   }
 }
